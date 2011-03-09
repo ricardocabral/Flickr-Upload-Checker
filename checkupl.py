@@ -3,9 +3,11 @@ import commands
 from os.path import join, getsize
 import flickrapi
 
+#### THESE PARAMETERS NEEDS TO BE CHANGED
 user_id='53011016@N00'
 api_key='71e59cab4ff9d8958d572cfaa485f4c1'
 api_secret= 'e9c6e341cc04f991'
+#### END OF WHAT NEEDS TO BE CHANGED
 
 flickr = flickrapi.FlickrAPI(api_key,api_secret)
 (token, frob) = flickr.get_token_part_one(perms='read')

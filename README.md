@@ -14,13 +14,18 @@ It will remove local files that has the same EXIF Creation-date-time tag as the 
 
 # Usage
 
+First edit 'checkupl.py' and change your Flickr user id, api key and api secret. You will need to create new Flickr App keys yourself, see Flickr help.
+
+Then go to the root dir where your photos are and run:
+
 > python checkupl.py
 
 This will scan all the current directory and it's subdirectories for jpeg images and check against your Flickr account.
-This will make one Flickr request for each image in the current dir and its subdirs.
+
+The script will make one Flickr HTTP request for each image in the current dir and its subdirs.
 
 # Credits
 
-Ricardo Niederberger Cabral
-ricardo@isnotworking.com
+Ricardo Niederberger Cabral (ricardo at isnotworking.com)
+
 https://github.com/ricardocabral/Flickr-Upload-Checker
